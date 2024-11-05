@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>all</h2>
+    <button onclick="showSurvivorPerks('all')">all</button>
+    <button onclick="showSurvivorPerks('all')">all survivor</button>
+    <button onclick="showKillerPerks('all')">all killer</button>
+    <hr>
+    <h2>survivor</h2>
+    <button onclick="showSurvivorPerks('info')">info</button>
+    <button onclick="showSurvivorPerks('chase')">chase</button>
+    <button onclick="showSurvivorPerks('repair')">repair</button>
+    <hr>
+    <h2>killer</h2>
+    <button onclick="showKillerPerks('info')">info</button>
+    <button onclick="showKillerPerks('slowdown')">slowdown</button>
+    <button onclick="showKillerPerks('stealth')">stealth</button>
+    <hr>
+
+    <div id="categorySelection">
+        <legend>Select your categories</legend>
+        <input type="checkbox" name="info" id="cbInfo">
+        <label for="info">info</label>
+        <br>
+        <input type="checkbox" name="chase" id="cbChase">
+        <label for="chase">chase</label>
+        <br>
+        <input type="checkbox" name="repair" id="cbRepair">
+        <label for="repair">repair</label>
+        <br>
+    </div>
+
+    <button onclick="generateSurvivorBuild()">Generate</button>
+</body>
+
+</html>

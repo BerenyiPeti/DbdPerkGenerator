@@ -1,0 +1,55 @@
+{
+    "kperks": [
+        {
+            "name": "painres",
+            "cat": ["slowdown"]
+        },
+        {
+            "name": "pop",
+            "cat": ["slowdown"]
+        },
+        {
+            "name": "bbq",
+            "cat": ["info"]
+        },
+        {
+            "name": "lethalp",
+            "cat": ["info"]
+        },
+        {
+            "name": "tinkerer",
+            "cat": ["info","stealth"]
+        },
+        {
+            "name": "furtive chase",
+            "cat": ["haste","stealth","obsession"]
+        }
+        
+    ],
+    "sperks": [
+        {
+            "name": "kindred",
+            "cat": ["info"]
+        },
+        {
+            "name": "alert",
+            "cat": ["info"]
+        },
+        {
+            "name": "lithe",
+            "cat": ["chase","haste"]
+        },
+        {
+            "name": "windows",
+            "cat": ["chase"]
+        },
+        {
+            "name": "dejavu",
+            "cat": ["info","repair"]
+        },
+        {
+            "name": "quick gambit",
+            "cat": ["info","repair","chase"]
+        }
+    ]
+}
