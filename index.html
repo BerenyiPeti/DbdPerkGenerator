@@ -25,21 +25,37 @@
     <button onclick="showKillerPerks('slowdown')">slowdown</button>
     <button onclick="showKillerPerks('stealth')">stealth</button>
     <hr>
-
-    <div id="categorySelection">
+    <h2>Selected:</h2>
+    <h1 id="currentRoleDisplay">Survivor</h1>
+    <button id="roleSelector" onclick="switchRole()">Switch</button>
+    <hr>
+    <div id="categorySelectionSurvivor">
         <legend>Select your categories</legend>
-        <input type="checkbox" name="info" id="cbInfo">
+        <input type="checkbox" name="info" class="survCheckbox">
         <label for="info">info</label>
         <br>
-        <input type="checkbox" name="chase" id="cbChase">
+        <input type="checkbox" name="chase" class="survCheckbox">
         <label for="chase">chase</label>
         <br>
-        <input type="checkbox" name="repair" id="cbRepair">
+        <input type="checkbox" name="repair" class="survCheckbox">
         <label for="repair">repair</label>
         <br>
+        <button onclick="generateSurvivorBuild()">Generate</button>
+    </div>
+    <div id="categorySelectionKiller">
+        <legend>Select your categories</legend>
+        <input type="checkbox" name="info">
+        <label for="info">info</label>
+        <br>
+        <input type="checkbox" name="chase">
+        <label for="chase">slowdown</label>
+        <br>
+        <input type="checkbox" name="repair">
+        <label for="repair">stealth</label>
+        <br>
+        <button onclick="generateKillerBuild()">Generate</button>
     </div>
 
-    <button onclick="generateSurvivorBuild()">Generate</button>
 </body>
 
 </html>

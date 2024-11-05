@@ -1,5 +1,6 @@
 const survivorPerks = []
 const killerPerks = []
+var selectedRole = "survivor"
 
 window.addEventListener("load",init)
 
@@ -94,8 +95,39 @@ function showKillerPerks(category) {
 }
 
 function generateSurvivorBuild() {
-    let isInfo = document.getElementById("cbInfo").name
-    console.log(isInfo);
+    let checkboxes = document.getElementsByClassName("survCheckbox")
+    let selected = []
+    for (let index = 0; index < checkboxes.length; index++) {
+        if (checkboxes[index].selected == true) {
+            selected.push(checkboxes[index])
+        }
+    }
+    console.log(selected);
+
+
+}
+
+function switchRole() {
+    if (selectedRole == "survivor") {
+        selectedRole = "killer"
+    } else {
+        selectedRole = "survivor"
+    }
+
+    if (selectedRole == "survivor") {
+        document.getElementById("currentRoleDisplay").innerHTML = "Survivor"
+        document.getElementById("categorySelectionSurvivor").style.display = "block"
+        document.getElementById("categorySelectionKiller").style.display = "none"
+        
+    }
+
+    if (selectedRole == "killer") {
+        document.getElementById("currentRoleDisplay").innerHTML = "Killer"
+        document.getElementById("categorySelectionSurvivor").style.display = "none"
+        document.getElementById("categorySelectionKiller").style.display = "block"
+    }
+
+    
 }
 
 
